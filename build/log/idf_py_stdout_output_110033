@@ -1,0 +1,368 @@
+Command: /home/impraveeena/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/impraveeena/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/impraveeena/esp/esp-idf/examples/provisioning/wifi_prov_mgr/build/wifi_prov_mgr.elf /home/impraveeena/esp/esp-idf/examples/provisioning/wifi_prov_mgr/build/bootloader/bootloader.elf -m '/home/impraveeena/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/impraveeena/esp/esp-idf/tools/idf.py'
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6328
+load:0x40078000,len:15828
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-1655-gc5865270b5-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Feb  2 2025 22:29:48[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00140000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=251a8h (151976) map[0m
+[0;32mI (140) esp_image: segment 1: paddr=000351d0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (140) esp_image: segment 2: paddr=000351f4 vaddr=3ffbdb60 size=05c94h ( 23700) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=0003ae90 vaddr=40080000 size=05188h ( 20872) load[0m
+[0;32mI (161) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=bc55ch (771420) map[0m
+[0;32mI (425) esp_image: segment 5: paddr=000fc584 vaddr=40085188 size=17780h ( 96128) load[0m
+[0;32mI (476) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (476) boot: Disabling RNG early entropy source...[0m
+[0;32mI (487) cpu_start: Multicore app[0m
+[0;32mI (495) cpu_start: Pro cpu start user code[0m
+[0;32mI (495) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (495) app_init: Application information:[0m
+[0;32mI (495) app_init: Project name:     wifi_prov_mgr[0m
+[0;32mI (500) app_init: App version:      v5.5-dev-1655-gc5865270b5-dirty[0m
+[0;32mI (506) app_init: Compile time:     Feb  2 2025 22:29:30[0m
+[0;32mI (511) app_init: ELF file SHA256:  6b18097e5...[0m
+[0;32mI (515) app_init: ESP-IDF:          v5.5-dev-1655-gc5865270b5-dirty[0m
+[0;32mI (521) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (525) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (529) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (533) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (539) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (544) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFCA170 len 00015E90 (87 KiB): DRAM[0m
+[0;32mI (560) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (565) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (571) heap_init: At 4009C908 len 000036F8 (13 KiB): IRAM[0m
+[0;32mI (578) spi_flash: detected chip: generic[0m
+[0;32mI (580) spi_flash: flash io: dio[0m
+[0;33mW (583) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (596) coexist: coex firmware version: 5e934a2[0m
+[0;32mI (600) main_task: Started on CPU0[0m
+[0;32mI (610) main_task: Calling app_main()[0m
+[0;32mI (640) wifi:wifi driver task: 3ffcdf8c, prio:23, stack:6656, core=0[0m
+[0;32mI (640) wifi:wifi firmware version: 090f94a[0m
+[0;32mI (640) wifi:wifi certification version: v7.0[0m
+[0;32mI (640) wifi:config NVS flash: enabled[0m
+[0;32mI (640) wifi:config nano formatting: disabled[0m
+[0;32mI (650) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (650) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (660) wifi:Init management short buffer num: 32[0m
+[0;32mI (660) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (660) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (670) wifi:Init static rx buffer num: 10[0m
+[0;32mI (670) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (680) wifi_init: rx ba win: 6[0m
+[0;32mI (680) wifi_init: accept mbox: 6[0m
+[0;32mI (680) wifi_init: tcpip mbox: 32[0m
+[0;32mI (680) wifi_init: udp mbox: 6[0m
+[0;32mI (690) wifi_init: tcp mbox: 6[0m
+[0;32mI (690) wifi_init: tcp tx win: 5760[0m
+[0;32mI (690) wifi_init: tcp rx win: 5760[0m
+[0;32mI (700) wifi_init: tcp mss: 1440[0m
+[0;32mI (700) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (700) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (710) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (710) app: Starting provisioning[0m
+[0;32mI (710) app: Development mode: using hard coded salt[0m
+[0;32mI (720) app: Development mode: using hard coded verifier[0m
+[0;32mI (730) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (810) wifi:mode : sta (40:91:51:bf:c7:94)[0m
+[0;32mI (810) wifi:enable tsf[0m
+[0;33mW (810) BTDM_INIT: esp_bt_controller_rom_mem_release already released, mode 2[0m
+[0;32mI (820) BTDM_INIT: BT controller compile version [194dd63][0m
+[0;32mI (820) BTDM_INIT: Bluetooth MAC: 40:91:51:bf:c7:96[0m
+[0;32mI (1060) protocomm_nimble: BLE Host Task Started[0m
+[0;32mI (1070) wifi_prov_mgr: Provisioning started with service name : PROV_BFC794 [0m
+[0;32mI (1070) app: Provisioning started[0m
+[0;32mI (1070) app: Scan this QR code from the provisioning application for Provisioning.[0m
+[0;32mI (1080) QRCODE: Encoding below text with ECC LVL 0 & QR Code Version 10[0m
+[0;32mI (1080) QRCODE: {"ver":"v1","name":"PROV_BFC794","username":"Im_Praveena","pop":"abcdefgh","transport":"ble"}[0m
+[0;32mI (1110) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1110) NimBLE: disc_mode=2[0m
+[0;32mI (1120) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=256[0m
+[0;32mI (1120) NimBLE: [0m
+
+                                          
+  █▀▀▀▀▀█ ▄▄█  █ ██▄█▀▄▄██ ▀███ █▀▀▀▀▀█   
+  █ ███ █ ▀▄  ▄  █▀▀██  ▄▄█  █▀ █ ███ █   
+  █ ▀▀▀ █ █▀█ █▀██  █▄▄ █▀ ▀██  █ ▀▀▀ █   
+  ▀▀▀▀▀▀▀ █ █▄▀ ▀▄▀▄█▄▀▄█▄▀ ▀▄▀ ▀▀▀▀▀▀▀   
+  ▀█▄█▄▄▀█   ███▀ ▄▄  ▄█ █▄██   ██▀▄▀█▄   
+  █▄▄▀▄ ▀▀▀▀▀██▄█  ▀ █▄▄█▄▄█ ▄▀ ▄█▄▄▀ █   
+   ▄▄█ ▀▀▀ █▀█ █   █ ▄██▄█▄▀▄▀▄▄█  █  █   
+  ▄ ▀▀▀▄▀ █▀▄█ ▄▀ ▄▄▄  ▄▄█▄█▄ ▄██▀ ▄  ▀   
+   ▀█ ▀▀▀▀ ▄█ █▄▄▀▄█ ▀█▀▀██▄▄ ▀█▀▀▄▄▀▀█   
+   █▄▄  ▀▄▄▀ ▀█ ▄▄█▄▀▄▀█▄▄  ▄ ▄▄▀██ ▄██   
+   ▀ ▄▄ ▀ ▀▀█▄ █  ▄▄▀▀▀█ ▄███▄█ ▀ ▀▀  █   
+  █▀▀█ ▄▀█ ▀▀  ▄█ ▀▀▀▀█▄▄▄▀▄█ ▄ █▄█▄▀▀█   
+  ▀██▀ ▄▀█▀▄ ▄██▄  ▀▀▄▀██ ▀█ ▄▀█▀▄ █▄▄█   
+  ▀▄█▄▀▄▀█ ▀  █▄█ ██ ▄ █▀▀▀█▀ ▀ ▄ ██▀▀█   
+  ▀▀▀▀ ▀▀▀██ ▀ ▀█▀▄▀▀▀ ▀ █ ▄▄▄█▀▀▀█▄▀▄▄   
+  █▀▀▀▀▀█ ▀▀▀▄ █ ▄▄█▀▄▄▄▄ ▀ █ █ ▀ █▄▄▀▀   
+  █ ███ █ ▄█ ██▄▀ █▄▄▀▄█▀▀▀▀▀ █▀▀██ ▄     
+  █ ▀▀▀ █ ▄ ████▀    ███  ▄█ ▀▀█▀▄▀▄ ▀▀   
+  ▀▀▀▀▀▀▀ ▀▀▀▀  ▀  ▀   ▀  ▀▀ ▀▀   ▀  ▀▀   
+                                          
+
+[0;32mI (1380) app: If QR code is not visible, copy paste the below URL in a browser.[0m
+https://espressif.github.io/esp-jumpstart/qrcode.html?data={"ver":"v1","name":"PROV_BFC794","username":"Im_Praveena","pop":"abcdefgh","transport":"ble"}
+[0;32mI (7110) app: BLE transport: Connected![0m
+[0;32mI (8310) protocomm_nimble: mtu update event; conn_handle=0 cid=4 mtu=256[0m
+[0;32mI (10290) security2: Using salt and verifier to generate public key...[0m
+[0;32mI (10920) app: Secured session established![0m
+[0;33mW (28130) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (28170) app: Received Wi-Fi credentials[0m
+	SSID     : Im_Praveena
+	Password : abcdefgh 
+[0;32mI (34260) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (34270) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (34300) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (34350) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (38380) wifi:state: run -> init (0xfc0)[0m
+[0;32mI (38390) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (38390) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (43220) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (48050) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (48050) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (48060) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (48110) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (51150) wifi:state: run -> init (0xf00)[0m
+[0;32mI (51170) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (51170) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (56000) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (60830) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (60830) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (60880) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (60900) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (63950) wifi:state: run -> init (0xf00)[0m
+[0;32mI (63960) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (63960) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[1;31mE (63960) wifi_prov_mgr: STA Disconnected[0m
+[1;31mE (63960) wifi_prov_mgr: Disconnect reason : 15[0m
+[1;31mE (63970) wifi_prov_mgr: STA Auth Error[0m
+[1;31mE (63970) app: Provisioning failed![0m
+	Reason : Wi-Fi station authentication failed
+	Please reset to factory and retry provisioning
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6328
+load:0x40078000,len:15828
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-1655-gc5865270b5-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Feb  2 2025 22:29:48[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00140000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=251a8h (151976) map[0m
+[0;32mI (140) esp_image: segment 1: paddr=000351d0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (140) esp_image: segment 2: paddr=000351f4 vaddr=3ffbdb60 size=05c94h ( 23700) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=0003ae90 vaddr=40080000 size=05188h ( 20872) load[0m
+[0;32mI (161) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=bc55ch (771420) map[0m
+[0;32mI (425) esp_image: segment 5: paddr=000fc584 vaddr=40085188 size=17780h ( 96128) load[0m
+[0;32mI (476) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (476) boot: Disabling RNG early entropy source...[0m
+[0;32mI (487) cpu_start: Multicore app[0m
+[0;32mI (495) cpu_start: Pro cpu start user code[0m
+[0;32mI (495) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (495) app_init: Application information:[0m
+[0;32mI (495) app_init: Project name:     wifi_prov_mgr[0m
+[0;32mI (500) app_init: App version:      v5.5-dev-1655-gc5865270b5-dirty[0m
+[0;32mI (506) app_init: Compile time:     Feb  2 2025 22:29:30[0m
+[0;32mI (511) app_init: ELF file SHA256:  6b18097e5...[0m
+[0;32mI (515) app_init: ESP-IDF:          v5.5-dev-1655-gc5865270b5-dirty[0m
+[0;32mI (521) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (525) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (529) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (533) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (539) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (544) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFCA170 len 00015E90 (87 KiB): DRAM[0m
+[0;32mI (560) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (565) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (571) heap_init: At 4009C908 len 000036F8 (13 KiB): IRAM[0m
+[0;32mI (578) spi_flash: detected chip: generic[0m
+[0;32mI (580) spi_flash: flash io: dio[0m
+[0;33mW (582) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (596) coexist: coex firmware version: 5e934a2[0m
+[0;32mI (600) main_task: Started on CPU0[0m
+[0;32mI (610) main_task: Calling app_main()[0m
+[0;32mI (650) wifi:wifi driver task: 3ffce00c, prio:23, stack:6656, core=0[0m
+[0;32mI (660) wifi:wifi firmware version: 090f94a[0m
+[0;32mI (660) wifi:wifi certification version: v7.0[0m
+[0;32mI (660) wifi:config NVS flash: enabled[0m
+[0;32mI (660) wifi:config nano formatting: disabled[0m
+[0;32mI (670) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (670) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (680) wifi:Init management short buffer num: 32[0m
+[0;32mI (680) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (680) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (690) wifi:Init static rx buffer num: 10[0m
+[0;32mI (690) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (700) wifi_init: rx ba win: 6[0m
+[0;32mI (700) wifi_init: accept mbox: 6[0m
+[0;32mI (700) wifi_init: tcpip mbox: 32[0m
+[0;32mI (700) wifi_init: udp mbox: 6[0m
+[0;32mI (710) wifi_init: tcp mbox: 6[0m
+[0;32mI (710) wifi_init: tcp tx win: 5760[0m
+[0;32mI (710) wifi_init: tcp rx win: 5760[0m
+[0;32mI (720) wifi_init: tcp mss: 1440[0m
+[0;32mI (720) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (720) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (730) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (730) app: Starting provisioning[0m
+[0;32mI (730) app: Development mode: using hard coded salt[0m
+[0;32mI (740) app: Development mode: using hard coded verifier[0m
+[0;32mI (750) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (830) wifi:mode : sta (40:91:51:bf:c7:94)[0m
+[0;32mI (830) wifi:enable tsf[0m
+[0;33mW (840) BTDM_INIT: esp_bt_controller_rom_mem_release already released, mode 2[0m
+[0;32mI (840) BTDM_INIT: BT controller compile version [194dd63][0m
+[0;32mI (840) BTDM_INIT: Bluetooth MAC: 40:91:51:bf:c7:96[0m
+[0;32mI (1090) protocomm_nimble: BLE Host Task Started[0m
+[0;32mI (1100) wifi_prov_mgr: Provisioning started with service name : PROV_BFC794 [0m
+[0;32mI (1100) app: Provisioning started[0m
+[0;32mI (1110) app: Scan this QR code from the provisioning application for Provisioning.[0m
+[0;32mI (1110) QRCODE: Encoding below text with ECC LVL 0 & QR Code Version 10[0m
+[0;32mI (1120) QRCODE: {"ver":"v1","name":"PROV_BFC794","username":"Im_Praveena","pop":"abcdefgh","transport":"ble"}[0m
+[0;32mI (1140) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1140) NimBLE: disc_mode=2[0m
+[0;32mI (1140) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=256[0m
+[0;32mI (1150) NimBLE: [0m
+
+                                          
+  █▀▀▀▀▀█ ▄▄█  █ ██▄█▀▄▄██ ▀███ █▀▀▀▀▀█   
+  █ ███ █ ▀▄  ▄  █▀▀██  ▄▄█  █▀ █ ███ █   
+  █ ▀▀▀ █ █▀█ █▀██  █▄▄ █▀ ▀██  █ ▀▀▀ █   
+  ▀▀▀▀▀▀▀ █ █▄▀ ▀▄▀▄█▄▀▄█▄▀ ▀▄▀ ▀▀▀▀▀▀▀   
+  ▀█▄█▄▄▀█   ███▀ ▄▄  ▄█ █▄██   ██▀▄▀█▄   
+  █▄▄▀▄ ▀▀▀▀▀██▄█  ▀ █▄▄█▄▄█ ▄▀ ▄█▄▄▀ █   
+   ▄▄█ ▀▀▀ █▀█ █   █ ▄██▄█▄▀▄▀▄▄█  █  █   
+  ▄ ▀▀▀▄▀ █▀▄█ ▄▀ ▄▄▄  ▄▄█▄█▄ ▄██▀ ▄  ▀   
+   ▀█ ▀▀▀▀ ▄█ █▄▄▀▄█ ▀█▀▀██▄▄ ▀█▀▀▄▄▀▀█   
+   █▄▄  ▀▄▄▀ ▀█ ▄▄█▄▀▄▀█▄▄  ▄ ▄▄▀██ ▄██   
+   ▀ ▄▄ ▀ ▀▀█▄ █  ▄▄▀▀▀█ ▄███▄█ ▀ ▀▀  █   
+  █▀▀█ ▄▀█ ▀▀  ▄█ ▀▀▀▀█▄▄▄▀▄█ ▄ █▄█▄▀▀█   
+  ▀██▀ ▄▀█▀▄ ▄██▄  ▀▀▄▀██ ▀█ ▄▀█▀▄ █▄▄█   
+  ▀▄█▄▀▄▀█ ▀  █▄█ ██ ▄ █▀▀▀█▀ ▀ ▄ ██▀▀█   
+  ▀▀▀▀ ▀▀▀██ ▀ ▀█▀▄▀▀▀ ▀ █ ▄▄▄█▀▀▀█▄▀▄▄   
+  █▀▀▀▀▀█ ▀▀▀▄ █ ▄▄█▀▄▄▄▄ ▀ █ █ ▀ █▄▄▀▀   
+  █ ███ █ ▄█ ██▄▀ █▄▄▀▄█▀▀▀▀▀ █▀▀██ ▄     
+  █ ▀▀▀ █ ▄ ████▀    ███  ▄█ ▀▀█▀▄▀▄ ▀▀   
+  ▀▀▀▀▀▀▀ ▀▀▀▀  ▀  ▀   ▀  ▀▀ ▀▀   ▀  ▀▀   
+                                          
+
+[0;32mI (1410) app: If QR code is not visible, copy paste the below URL in a browser.[0m
+https://espressif.github.io/esp-jumpstart/qrcode.html?data={"ver":"v1","name":"PROV_BFC794","username":"Im_Praveena","pop":"abcdefgh","transport":"ble"}
+[0;32mI (17640) app: BLE transport: Connected![0m
+[0;32mI (18800) protocomm_nimble: mtu update event; conn_handle=0 cid=4 mtu=256[0m
+[0;32mI (19800) security2: Using salt and verifier to generate public key...[0m
+[1;31mE (20440) security2: Failed to authenticate client proof![0m
+[1;31mE (20440) security2: Session setup error -1[0m
+[1;31mE (20440) protocomm_nimble: Invalid content received, killing connection[0m
+[1;31mE (20450) app: Received incorrect username and/or PoP for establishing secure session![0m
+[0;33mW (24340) security2: Invalid state of session 0 (expected 1). Restarting session.[0m
+[1;31mE (24340) security2: Closing old session with id 0[0m
+[0;32mI (24340) security2: Using salt and verifier to generate public key...[0m
+[1;31mE (24970) security2: Failed to authenticate client proof![0m
+[1;31mE (24970) security2: Session setup error -1[0m
+[1;31mE (24970) protocomm_nimble: Invalid content received, killing connection[0m
+[1;31mE (24980) app: Received incorrect username and/or PoP for establishing secure session![0m
+[0;32mI (27750) app: BLE transport: Disconnected![0m
+[0;32mI (27750) app: BLE transport: Disconnected![0m
+[0;32mI (27760) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (27760) NimBLE: disc_mode=2[0m
+[0;32mI (27760) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=256[0m
+[0;32mI (27770) NimBLE: [0m
+
+[0;32mI (31250) app: BLE transport: Connected![0m
+[0;32mI (32410) protocomm_nimble: mtu update event; conn_handle=0 cid=4 mtu=256[0m
+[0;32mI (35110) security2: Using salt and verifier to generate public key...[0m
+[0;32mI (35750) app: Secured session established![0m
+[0;33mW (53690) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (53740) app: Received Wi-Fi credentials[0m
+	SSID     : Im_Praveena
+	Password : abcdefgh
+[0;32mI (59840) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (59840) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (59860) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (59910) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (60940) wifi:connected with Im_Praveena, aid = 15, channel 11, BW20, bssid = 9a:cd:f1:9c:9b:57[0m
+[0;32mI (60940) wifi:security: WPA2-PSK, phy: bgn, rssi: -57[0m
+[0;32mI (60970) wifi:pm start, type: 1[0m
+
+[0;32mI (60970) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (61010) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (61010) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (62570) app: Connected with IP Address:192.168.1.60[0m
+[0;32mI (62570) esp_netif_handlers: sta ip: 192.168.1.60, mask: 255.255.255.0, gw: 192.168.1.177[0m
+[0;32mI (62570) wifi_prov_mgr: STA Got IP[0m
+[0;32mI (62570) app: Provisioning successful[0m
+[0;32mI (62570) app: Hello World![0m
+[0;32mI (63580) app: Hello World![0m
+[0;32mI (64580) app: Hello World![0m
+[0;32mI (65580) app: Hello World![0m
+[0;32mI (66580) app: Hello World![0m
+[0;32mI (67410) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (67420) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (67420) NimBLE: GAP procedure initiated: terminate connection; conn_handle=0 hci_reason=19[0m
+
+[1;31mE (67480) protocomm_nimble: Error setting advertisement data; rc = 30[0m
+[0;32mI (67490) wifi_prov_mgr: Provisioning stopped[0m
+[0;32mI (67490) app: BLE transport: Disconnected![0m
+[0;32mI (67490) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (67580) app: Hello World![0m
+[0;32mI (68580) app: Hello World![0m
+[0;32mI (69580) app: Hello World![0m
+[0;32mI (70580) app: Hello World![0m
+[0;32mI (71580) app: Hello World![0m
+[0;32mI (72580) app: Hello World![0m
+[0;32mI (73580) app: Hello World![0m
+[0;32mI (74580) app: Hello World![0m
+[0;32mI (75580) app: Hello World![0m
+[0;32mI (76580) app: Hello World![0m
+[0;32mI (77580) app: Hello World![0m
+[0;32mI (78580) app: Hello World![0m
+[0;32mI (79580) app: Hello World![0m
+[0;32mI (80580) app: Hello World![0m
+[0;32mI (81580) app: Hello World![0m
+[0;32mI (82580) app: Hello World![0m
